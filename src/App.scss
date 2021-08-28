@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap");
+
+.App {
+  text-align: center;
+}
+
+.hidden-text {
+  display: none !important;
+}
+
+@mixin ContainerResponsive {
+  width: 100% !important;
+  padding: 1rem !important;
+  margin: 0 !important;
+  box-sizing: border-box;
+}
+
+@media only screen and (max-width: 768px) {
+  .responsive-container {
+    @include ContainerResponsive;
+  }
+}
